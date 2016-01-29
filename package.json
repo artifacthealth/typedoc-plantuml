@@ -1,6 +1,6 @@
 {
   "name": "typedoc-plantuml",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Plugin for TypeDoc that generates images for PlantUML diagrams embedded in comments.",
   "main": "lib/plugin.js",
   "scripts": {
@@ -9,6 +9,10 @@
   "author": {
     "name": "Artifact Health, LLC",
     "url": "http://www.artifacthealth.com"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/artifacthealth/typedoc-plantuml.git"
   },
   "licenses": [
     {
@@ -31,3 +35,4 @@
     "typedoc": "^0.3.12"
   }
 }
+
