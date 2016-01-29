@@ -37,9 +37,7 @@ function setupCase(filename) {
         // load case
         var testCase = JSON.parse(fs.readFileSync(testCasesDir + filename, 'utf8'));
         // then run test
-        run(baseName, testCase, function (err) {
-            if (err) throw err;
-
+        run(baseName, testCase, function () {
             compareToBaseline(baseName);
         });
     });
@@ -51,15 +49,13 @@ function run(name, testCase, cb) {
     var app = new typedoc.Application();
 
     // apply plugin
-    plugin(app, typedoc);
+    plugin(app, typedoc, cb);
 
     app.bootstrapWithOptions(testCase.options);
 
     var src = app.expandInputFiles(testCase.files);
     var project = app.convert(src);
     app.generateDocs(project, testCase.out);
-
-    cb(null);
 }
 
 // This function includes example code from https://www.npmjs.com/package/dir-compare
@@ -68,7 +64,7 @@ function compareToBaseline(name) {
     var referenceDir = referenceBaselineDir + name;
     var localDir = localBaselineDir + name;
 
-    var results = dircompare.compareSync(referenceDir, localDir);
+    var results = dircompare.compareSync(referenceDir, localDir, { compareSize: true, skipSymlinks: true, excludeFilter: ".DS_Store" });
     if(!results.same) {
         var message = "Case '" + name + "' failed. The following is a summary of differences:\n";
 

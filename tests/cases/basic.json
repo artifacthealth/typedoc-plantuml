@@ -2,7 +2,8 @@
     "options": {
         "target": "es5",
         "module": "commonjs",
-        "mode": "file"
+        "mode": "file",
+        "readme": "none"
     },
     "files": [
         "tests/fixture/someClass.ts"

@@ -1,3 +1,5 @@
 /.idea
 /node_modules
 /tests/baselines/local
+
+https://raw.githubusercontent.com/artifacthealth/typedoc-plantuml/blob/master/tests/baselines/reference/basic/classes/someclass.html

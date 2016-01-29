@@ -3,7 +3,8 @@
         "target": "es5",
         "module": "commonjs",
         "mode": "file",
-        "umlLocation": "remote"
+        "umlLocation": "remote",
+        "readme": "none"
     },
     "files": [
         "tests/fixture/someClass.ts"
