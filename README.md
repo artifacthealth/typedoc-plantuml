@@ -40,8 +40,10 @@ export class SomeClass {
 }
 ```
 
+You can view the generated documentation [here](https://rawgit.com/artifacthealth/typedoc-plantuml/master/tests/baselines/reference/basic/classes/someclass.html).
+
 Please refer to the [plantuml website](http://plantuml.com/) for a full reference on the supported UML syntax.
-  
+
 
 ## License
 
