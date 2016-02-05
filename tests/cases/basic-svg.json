@@ -1,0 +1,13 @@
+{
+    "options": {
+        "target": "es5",
+        "module": "commonjs",
+        "mode": "file",
+        "umlFormat": "svg",
+        "readme": "none"
+    },
+    "files": [
+        "tests/fixture/someClass.ts"
+    ],
+    "out": "tests/baselines/local/basic-svg/"
+}

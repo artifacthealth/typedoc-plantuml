@@ -1,6 +1,6 @@
 {
   "name": "typedoc-plantuml",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Plugin for TypeDoc that generates images for PlantUML diagrams embedded in comments.",
   "main": "lib/plugin.js",
   "scripts": {
