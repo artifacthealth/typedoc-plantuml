@@ -1,0 +1,13 @@
+{
+    "options": {
+        "target": "es5",
+        "module": "commonjs",
+        "mode": "file",
+        "umlLocation": "remote",
+        "readme": "none"
+    },
+    "files": [
+        "tests/fixture/umlWithoutAlt.ts"
+    ],
+    "out": "tests/baselines/local/remote-no-alt/"
+}

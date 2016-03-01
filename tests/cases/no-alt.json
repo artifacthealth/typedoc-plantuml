@@ -1,0 +1,12 @@
+{
+    "options": {
+        "target": "es5",
+        "module": "commonjs",
+        "mode": "file",
+        "readme": "none"
+    },
+    "files": [
+        "tests/fixture/umlWithoutAlt.ts"
+    ],
+    "out": "tests/baselines/local/no-alt/"
+}

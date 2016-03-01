@@ -18,8 +18,7 @@ The start of a UML diagram is indicated by the `<uml>` tag and closed by the `</
 generated image can optionally be specified using the `alt` attribute. For example `<uml alt="Some diagram">`.
 
 Note that the parser that finds the xml tags in the comment text is not very smart, so avoid unnecessary whitespace or 
-other attributes to the tag. Also note that the first paragraph in the comment text will not be processed for UML 
-diagrams.
+other attributes to the tag.
 
 The following is an example of embedding a sequence diagram in a class description.
   
