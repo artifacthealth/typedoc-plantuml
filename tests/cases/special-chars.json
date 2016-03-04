@@ -1,0 +1,12 @@
+{
+    "options": {
+        "target": "es5",
+        "module": "commonjs",
+        "mode": "file",
+        "readme": "none"
+    },
+    "files": [
+        "tests/fixture/specialChars.ts"
+    ],
+    "out": "tests/baselines/local/special-chars/"
+}

@@ -27,3 +27,5 @@ Third Party Code Components:
 
     - Example code from node-plantuml https://github.com/markushedvall/node-plantuml
         Licensed under MIT
+
+    - encode64.js from plantuml-encoder https://github.com/markushedvall/plantuml-encoder
