@@ -51,7 +51,7 @@ function run(name, testCase, cb) {
     // apply plugin
     plugin(app, typedoc, cb);
 
-    app.bootstrapWithOptions(testCase.options);
+    app.bootstrap(testCase.options);
 
     var src = app.expandInputFiles(testCase.files);
     var project = app.convert(src);
