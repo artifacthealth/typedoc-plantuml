@@ -49,7 +49,7 @@ function run(name, testCase, cb) {
     var app = new typedoc.Application();
 
     // apply plugin
-    plugin(app, typedoc, cb);
+    plugin(app.plugins, cb);
 
     app.bootstrap(testCase.options);
 
